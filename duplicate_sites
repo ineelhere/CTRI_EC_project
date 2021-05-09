@@ -1,0 +1,10 @@
+#to find Trials having duplicate data for Sites of Studies
+import pandas as pd 
+sos = pd.read_csv("sos.csv", encoding="unicode_escape")
+ids = list(sos["Trial ID"].unique())
+repeat_sos = []
+for i in ids:
+    if (len(sos.loc[sos["Trial ID"]==i]["Site Name"])==len(sos.loc[sos["Trial ID"]==i]["Site Name"].unique())):
+        pass
+    else:
+        repeat_sos.append(i)
