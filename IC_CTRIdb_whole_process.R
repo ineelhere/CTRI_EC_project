@@ -6,7 +6,7 @@ library(stringr)
 library(readr)
 
 #set range for searching valid trial webpages
-ids <- c(1:50)
+ids <- c(1:60000)
 counter = 0
 
 #-------------------------------define and connect the db----------------
