@@ -1043,3 +1043,6 @@ dbWriteTable(fin, "estimated_duration", estimated_duration)
 dbDisconnect(fin)
 dbDisconnect(con)
 
+# database file ready for use after code completion - "IC_CTRIdb.sqlite".
+# other  files may be deleted or kept for ease of backtracing.
+
